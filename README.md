@@ -1,16 +1,20 @@
-# lect9_sample
+# Lecture 09 - State Management
 
-A new Flutter project.
+This is a lecture sample code for CMSC 23 C and D Sections.
 
-## Getting Started
+## Created by
+- Katherine Loren Tan
+- 18 October 2022
+- For CMSC 23 C and D, State Management Sample
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Description and Components
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The program's screens, providers, and model are separated into folders. This is to ensure that the screens will only show the UI structure of the app. The providers will only return the necessary changes and updates on the page and the model for the class objects.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots of the App
+
+- HomePage
+<img src = "screenshots/HomePage.png" alt="HomePage" title="HomePage">
+- ProductCatalog
+- Cart
