@@ -1,3 +1,9 @@
+/// Created by: Katherine Loren Tan
+/// Date Created: 18 October 2022
+/// Description: Sample Lecture Code that uses
+/// the provider package
+/// To be used by CMSC 23 C and D Students only.
+
 import 'package:flutter/material.dart';
 import 'package:lect9_sample/model/Product.dart';
 import 'package:lect9_sample/provider/shoppingcart_provider.dart';
@@ -10,6 +16,10 @@ class ProductCatalog extends StatefulWidget {
   State<ProductCatalog> createState() => _ProductCatalogState();
 }
 
+///Creates a Product list available
+///outputs a ListView.builder that contains a
+///list of Product objects
+
 class _ProductCatalogState extends State<ProductCatalog> {
   List<Product> products = [
     Product('Apple', 1.5),
@@ -19,6 +29,10 @@ class _ProductCatalogState extends State<ProductCatalog> {
   ];
   @override
   Widget build(BuildContext context) {
+    ///On the onTap function,
+    ///It accesses/reads the function inside the ShoppingCart Provider
+    ///it invokes the addItem function at accepts a Product object.
+    ///outputs a snackbar that the item is successfully added.
     return Scaffold(
       appBar: AppBar(title: const Text('Product Catalog')),
       body: Column(children: [
@@ -32,12 +46,18 @@ class _ProductCatalogState extends State<ProductCatalog> {
                 trailing: const Icon(Icons.add),
                 onTap: () {
                   context.read<ShoppingCart>().addItem(products[index]);
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                      content: Text('Added ${products[index].name}!')));
                 },
               );
             },
           ),
         ),
       ]),
+
+      ///In this part, it only creates a floating action button
+      ///that we click, goes to the /cart or instansiates cart.
+
       floatingActionButton: FloatingActionButton(
           heroTag: UniqueKey(),
           onPressed: () => {Navigator.pushNamed(context, '/cart')},

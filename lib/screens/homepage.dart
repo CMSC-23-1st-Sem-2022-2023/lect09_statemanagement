@@ -1,3 +1,9 @@
+/// Created by: Katherine Loren Tan
+/// Date Created: 18 October 2022
+/// Description: Sample Lecture Code that uses
+/// the provider package
+/// To be used by CMSC 23 C and D Students only.
+
 import 'package:flutter/material.dart';
 import '../provider/counter_provider.dart';
 import 'package:provider/provider.dart';
