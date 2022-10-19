@@ -17,4 +17,17 @@ The program's screens, providers, and model are separated into folders. This is 
 - HomePage
 <img src = "screenshots/HomePage.png" alt="HomePage" title="HomePage">
 - ProductCatalog
+<img src = "screenshots/ProductCatalog.png" alt="ProductCatalog" title="ProductCatalog">
+    - Click Add Product to Shopping Cart
+    <img src = "screenshots/ProductCatalog-added.png" alt="Add ProductCatalog" title = "Add Product">
 - Cart
+<img src = "screenshots/MyCart.png" alt="Shopping Cart" title = "Shopping Cart">
+    - Shopping Cart with Items
+    <img src = "screenshots/MyCart-withcontent.png" alt="With Content Shopping Cart" title = "With Content Shopping Cart">
+    - Shopping Cart Remove Item All
+    <img src = "screenshots/MyCart-clear.png" alt="Clear Shopping Cart" title = "Clear Shopping Cart">
+    - Shopping Cart Buy
+    <img src = "screenshots/MyCart-buy.png" alt="Buy Shopping Cart" title = "Buy Shopping Cart">
+
+## Contact Me
+For questions and inquiries kindly email me at **kmtan4@up.edu.ph**
